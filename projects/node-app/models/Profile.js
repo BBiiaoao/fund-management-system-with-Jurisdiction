@@ -3,26 +3,27 @@ const Schema=mongoose.Schema;
 
 //Create Schema
 //模型骨架
-const UserSchema=new Schema({
-    name:{
+const ProfileSchema=new Schema({
+    type:{
         type:String,
-        //required表示是否必填
-        required:true
     },
-    email:{
+    describe:{
         type:String,
-        required:true
     },
-    password:{
+    income:{
         type:String,
         required:true
     },
-    avatar:{
-        type:String
-    },
-    identity:{
+    expend:{
         type:String,
         required:true
+    },
+    cash:{
+        type:String,
+        required:true
+    },
+    remark:{
+        type:String,
     },
     date:{
         type:Date,
@@ -31,4 +32,4 @@ const UserSchema=new Schema({
 });
 
 //由schema构造生成model
-module.exports=User=mongoose.model("users",UserSchema);
+module.exports=Profile=mongoose.model("profile",ProfileSchema);
