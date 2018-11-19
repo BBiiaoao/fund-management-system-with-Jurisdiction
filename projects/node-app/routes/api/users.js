@@ -83,7 +83,7 @@ router.post("/login", (req, res) => {
                         jwt.sign(rule,keys.secretOrKey,{expiresIn:3600},(err,token)=>{//jwt.sign(规则，密钥，过期时间，箭头函数)
                             if(err)
                                 throw(err);
-                            res.json({
+                            return res.json({
                                 success:true,
                                 token:"Bearer "+token
                             });
