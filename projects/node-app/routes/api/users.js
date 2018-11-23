@@ -80,7 +80,7 @@ router.post("/login", (req, res) => {
                             avatar:user.avatar,
                             identity:user.identity
                         };
-                        jwt.sign(rule,keys.secretOrKey,{expiresIn:3600},(err,token)=>{//jwt.sign(规则，密钥，过期时间，箭头函数)
+                        jwt.sign(rule,keys.secretOrKey,{expiresIn:10},(err,token)=>{//jwt.sign(规则，密钥，过期时间，箭头函数)
                             if(err)
                                 throw(err);
                             return res.json({

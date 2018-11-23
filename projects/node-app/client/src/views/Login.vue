@@ -25,6 +25,7 @@
 </template>
 
 <script>
+    import jwt_decode from 'jwt-decode';
     export default {
         name: "login",
         components: {},
@@ -53,22 +54,43 @@
         },
         methods:{
             submitForm(formName) {
+                //validate为表单提供了强大的验证功能
+                //在html元素中，添加ref属性，通过this.$refs属性来获取
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        console.log(this.loginUser);
                         this.$axios.post("/api/users/login",this.loginUser)
                             .then(res=>{
                                 // console.log(res);
                                 //token
                                 //解构赋值
                                 const {token}=res.data;
+
                                 //存储到localstorage中
                                 localStorage.setItem("eleToken",token);
+
+                                //解析token
+                                const decoded=jwt_decode(token);
+                                // console.log(decoded);
+
+                                //token存储到vuex中
+                                //dispatch：含有异步操作，例如向后台提交数据，写法： this.$store.dispatch('mutations方法名',值)
+                                //commit：同步操作，写法：this.$store.commit('mutations方法名',值)
+                                this.$store.dispatch("setAuthenticated",!this.isEmpty(decoded));
+                                this.$store.dispatch("setUser",decoded);
+
                                 this.$router.push("/index");
                             });
                     }
                 });
             },
+            isEmpty(value){
+                return(
+                    value === undefined ||
+                    value === null ||
+                    (typeof value === 'object' && Object.keys(value).length === 0) ||//Object.keys() 方法会返回一个由一个给定对象的自身可枚举属性组成的数组
+                    (typeof value === 'string' && value.trim().length === 0)//trim()函数用于去除字符串两端的空白字符
+                )
+            }
         }
     }
 </script>
