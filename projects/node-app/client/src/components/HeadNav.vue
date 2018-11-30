@@ -72,9 +72,10 @@
         width: 100%;
         height: 60px;
         min-width: 600px;
-        background: #1f6fb5;
-        color: #fff;
-        border-bottom: #1f6fb5 1px solid;
+        background: #303030;
+        color: #F26B3A;
+        border-top: #F26B3A 2px solid;
+        /*border-bottom: #F26B3A 2px solid;*/
     }
 
     .logo-container {
@@ -131,7 +132,7 @@
     }
 
     .avatarname {
-        color: #f8f2dc;
+        color: #ffee93;
     }
 
     .username {
@@ -140,6 +141,6 @@
     }
 
     .el-dropdown {
-        color: #fff;
+        color: #F26B3A;
     }
 </style>

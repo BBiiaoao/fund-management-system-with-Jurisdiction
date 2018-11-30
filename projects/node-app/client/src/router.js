@@ -6,10 +6,11 @@ import Login from './views/Login'
 import Notfind from './views/404'
 import Home from './views/Home'
 import Infoshow from './views/Infoshow'
+import FundList from './views/FundList'
 
 Vue.use(Router);
 
-const router=new Router({
+const router = new Router({
     mode: 'history',
     base: process.env.BASE_URL,
     routes: [
@@ -19,39 +20,40 @@ const router=new Router({
         },
         {
             path: '/index',
-            name:'index',
+            name: 'index',
             component: Index,
-            children:[
-                {path:'',component:Home},
-                {path:'/home',name:"home",component:Home},
-                {path:'/infoshow',name:'infoshow',component:Infoshow}
+            children: [
+                {path: '', component: Home},
+                {path: '/home', name: "home", component: Home},
+                {path: '/infoshow', name: 'infoshow', component: Infoshow},
+                {path: '/fundlist', name: 'fundlist', component: FundList}
             ]
         },
         {
             path: '/register',
-            name:'register',
+            name: 'register',
             component: Register
         },
         {
             path: '/login',
-            name:'login',
+            name: 'login',
             component: Login
         },
         {
-            path:'*',
-            name:'/404',
-            component:Notfind
+            path: '*',
+            name: '/404',
+            component: Notfind
         }
     ]
 });
 //路由守卫
 
-router.beforeEach((to,from,next)=>{
-   const isLogin=localStorage.eleToken ? true:false
-    if(to.path=="/login" || to.path=="/register"){
-       next();
-    }else{
-       isLogin ? next() : next('/login');
+router.beforeEach((to, from, next) => {
+    const isLogin = localStorage.eleToken ? true : false
+    if (to.path == "/login" || to.path == "/register") {
+        next();
+    } else {
+        isLogin ? next() : next('/login');
     }
 });
 

@@ -32,8 +32,8 @@
         data(){
             return{
                 loginUser:{
-                    email:'',
-                    password:''
+                    email:'test@test.com',
+                    password:'123456'
                 },
                 rules:{
                     email:[
@@ -70,7 +70,6 @@
 
                                 //解析token
                                 const decoded=jwt_decode(token);
-                                // console.log(decoded);
 
                                 //token存储到vuex中
                                 //dispatch：含有异步操作，例如向后台提交数据，写法： this.$store.dispatch('mutations方法名',值)

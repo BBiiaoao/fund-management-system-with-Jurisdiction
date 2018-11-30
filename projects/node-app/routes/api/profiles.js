@@ -42,7 +42,6 @@ router.get("/",passport.authenticate('jwt',{session:false}),(req,res)=>{
             if(!profile){
                 return res.status(404).json("没有内容")
             }
-
             res.json(profile);
         })
         .catch(err=>res.status(404).json(err))

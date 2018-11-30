@@ -13,7 +13,7 @@ const User = require("../../models/User");
 //$route GET api/users/test
 //@desc 返回的请求的json数据
 //@access public
-router.get("/test", (rep, res) => {
+router.get("/tes", (rep, res) => {
     res.json({msg: "login works"})
 });
 
@@ -80,7 +80,7 @@ router.post("/login", (req, res) => {
                             avatar:user.avatar,
                             identity:user.identity
                         };
-                        jwt.sign(rule,keys.secretOrKey,{expiresIn:10},(err,token)=>{//jwt.sign(规则，密钥，过期时间，箭头函数)
+                        jwt.sign(rule,keys.secretOrKey,{expiresIn:3600},(err,token)=>{//jwt.sign(规则，密钥，过期时间，箭头函数)
                             if(err)
                                 throw(err);
                             return res.json({
