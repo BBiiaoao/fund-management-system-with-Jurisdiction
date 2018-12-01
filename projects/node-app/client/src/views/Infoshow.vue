@@ -3,7 +3,7 @@
         <el-row type="flex" class="row-bg" justify="center">
             <el-col :span="8">
                 <div class="user">
-                    <img src="user.avatar" class="avatar" alt="">
+                    <img :src="user.avatar" class="avatar" alt="">
                 </div>
             </el-col>
             <el-col :span="16">
@@ -42,6 +42,7 @@
         height: 100%;
     }
     .row-bg{
+        width: 100%;
         height: 100%;
     }
     .user{

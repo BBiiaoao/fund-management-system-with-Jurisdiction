@@ -8,7 +8,7 @@
             <el-col :span="12" class="user-container">
                 <div class="userinfo">
                     <div class="img-container">
-                        <img src="user.avatar" class="avatar" alt="">
+                        <img :src="user.avatar" class="avatar" alt="">
                     </div>
                     <div class="welcome">
                         <p class="name comename">欢迎</p>
@@ -105,7 +105,12 @@
         display: inline-block;
         width: 30px;
         height: 30px;
-        padding-top: 15px;
+        margin-top: 15px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    .img-container img{
+        padding: 0;
     }
     .avatar {
         width: 30px;
