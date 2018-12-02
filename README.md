@@ -33,28 +33,28 @@
 ## 截图预览
 1. 登陆注册界面
 >
-![](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/login.png "登陆")
-![](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/register.png "注册")
+![登陆](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/login.png "登陆")
+![注册](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/register.png "注册")
 >
 2.加载动画界面
 >
-![](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/onLoad.png "加载动画")
+![加载动画](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/onLoad.png "加载动画")
 3. 主页
 >
-![](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/home.png "主页")
+![主页](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/home.png "主页")
 >
 4. 资金管理界面
 >
-![](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/fundManager.png "资金管理")
+![资金管理](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/fundManager.png "资金管理")
 >
 5. 个人信息界面
 >
-![](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/personal.png "个人信息")
+![个人信息](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/personal.png "个人信息")
 >
 6. token失效，重新登陆界面
 >
-![](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/tokenFailed.png "token失效")
+![token失效](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/tokenFailed.png "token失效")
 7. 输入无效网址，404界面
 >
-![](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/404.png "404")
+![404](https://github.com/BBiiaoao/fund-management-system-with-Jurisdiction/blob/master/projects/screenshot/404.png "404")
 >
