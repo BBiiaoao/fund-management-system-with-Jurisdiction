@@ -2,9 +2,9 @@
 这是一个使用vue搭建的一个带权限的基金管理系统
 ## 技术概览
 >
-- 后端接口:Node+express+jwt
-- 前端:VueCli3.0+ElementUI
-- 数据请求和拦截:Axios+Mlab+MongoDB
+- 后端接口: Node+express+jwt
+- 前端: VueCli3.0+ElementUI
+- 数据请求和拦截: Axios+Mlab+MongoDB
 >
 ---
 ## 数据库
@@ -12,22 +12,22 @@
 ---
 ## 后端
 >
-- 后端开发框架:使用基于Node.js平台的web应用开发框架express
-- 后端操作MongoDB:使用mongoose
-- 密码加密:用户注册后,使用bcrypt进行加密，传入数据库
-- 返回token:用户登陆后使用jsonwebtoken返回一个token，用之于安全验证
-- 验证token:使用passport对发起的请求需要验证token
+- 后端开发框架: 使用基于Node.js平台的web应用开发框架express
+- 后端操作MongoDB: 使用mongoose
+- 密码加密: 用户注册后,使用bcrypt进行加密，传入数据库
+- 返回token: 用户登陆后使用jsonwebtoken返回一个token，用之于安全验证
+- 验证token: 使用passport对发起的请求需要验证token
 >
 ---
 ## 前端
 >
-- UI界面:基于饿了么的ElementUI
-- 解析token:使用jwt_decode解析后端传来的token
-- token解析后的信息存储:将token解析后的用户信息存储在vuex中，方便组件间通信
-- 存储token:将token存储于localstorage中
-- 请求拦截:每次请求的时候加载动画,同时将储存在本地的token添加在请求头中
-- 响应拦截:请求结束后结束加载动画,成功则跳转页面,失败的话(token过期)则自动返回登陆页面
-- 用户头像:使用全球公认头像gravatar,可以绑定用户邮箱使用，如果邮箱没有头像，则使用其提供的默认头像
+- UI界面: 基于饿了么的ElementUI
+- 解析token: 使用jwt_decode解析后端传来的token
+- token解析后的信息存储: 将token解析后的用户信息存储在vuex中，方便组件间通信
+- 存储token: 将token存储于localstorage中
+- 请求拦截: 每次请求的时候加载动画,同时将储存在本地的token添加在请求头中
+- 响应拦截: 请求结束后结束加载动画,成功则跳转页面,失败的话(token过期)则自动返回登陆页面
+- 用户头像: 使用全球公认头像gravatar,可以绑定用户邮箱使用，如果邮箱没有头像，则使用其提供的默认头像
 >
 ---
 ## 截图预览
