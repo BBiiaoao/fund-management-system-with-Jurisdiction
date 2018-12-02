@@ -8,16 +8,17 @@
 >
 ---
 ## 数据库
->数据存储: 使用mongoDB线上数据库mlab
+>
+数据存储: 使用mongoDB线上数据库mlab
 >
 ---
 ## 后端
 >
 - 后端开发框架: 使用基于Node.js平台的web应用开发框架express
-- 后端操作MongoDB: 使用mongoose
-- 密码加密: 用户注册后,使用bcrypt进行加密，传入数据库
+- 后端操作MongoDB: 使用NodeJS提供连接 mongodb库--mongoose
+- 密码加密: 用户注册后,使用bcrypt对账户密码进行加密，传入数据库
 - 返回token: 用户登陆后使用jsonwebtoken返回一个token，用之于安全验证
-- 验证token: 使用passport对发起的请求需要验证token
+- 验证token: 使用passport对发起的请求验证token
 >
 ---
 ## 前端
