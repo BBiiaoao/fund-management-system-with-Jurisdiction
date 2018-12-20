@@ -21,18 +21,22 @@
                 </el-form>
             </div>
         </section>
+        <copy-right></copy-right>
     </div>
 </template>
 
 <script>
     import jwt_decode from 'jwt-decode';
+    import CopyRight from '../components/CopyRight'
     export default {
         name: "login",
-        components: {},
+        components: {
+            CopyRight
+        },
         data(){
             return{
                 loginUser:{
-                    email:'test@test.com',
+                    email:'511299371zb@gmail.com',
                     password:'123456'
                 },
                 rules:{
