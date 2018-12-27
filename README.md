@@ -1,5 +1,9 @@
 # fund-management-system-with-Jurisdiction
 这是一个使用vue搭建的一个带权限的基金管理系统
+### 小问题
+>
+项目构建期间出现的小问题及解决过程已经发布至个人简书上了:[Here!Here!](https://www.jianshu.com/p/b6eade60585c)
+>
 ## 技术概览
 >
 - 后端接口: Node+express+jwt
